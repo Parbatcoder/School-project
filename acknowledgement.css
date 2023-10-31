@@ -1,0 +1,73 @@
+*
+{
+    font-family: 'Quicksand';
+}
+body
+{
+   margin: 0px;
+}
+#banner
+{
+    width: 90%;
+    transition: 2s ease;
+}
+#title
+{
+    position: relative;
+    font-size: 7vw;
+    text-align: center;
+    font-weight: 5vw;
+    padding-bottom: 0.3em;
+    border-bottom: 0.2em solid black;
+    max-width: 50em;
+    font-family: 'Crimson Text', serif;
+    margin: 1em;
+}
+#acknowledgement
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em;
+    font-weight: bold;
+    color: #ffb355;
+}
+p
+{
+    font-size: 1em;
+    margin: 1em;
+}
+#ackcont
+{
+    margin-bottom: 3em;
+}
+#ackcont p
+{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#ackcont hr
+{
+    outline: none;
+    border: gray 2px solid;
+    width: 20%;
+    height: 2%;
+    background-color: gray;
+}
+#aboutme
+{
+    margin: 1em;
+    border: 0.1em solid #ffb355;
+    border-radius: 1em;
+    display: flex;
+}
+#aboutme img
+{
+    width: 5em;
+    height: 5em;
+    border-radius: 3em;
+    margin: 1em;
+}
+#aboutme p
+{
+    margin-left: 0px;
+}
