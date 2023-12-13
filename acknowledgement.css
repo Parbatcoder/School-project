@@ -1,0 +1,290 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    transition: 1s;
+}
+body
+{
+    color: black;
+}
+.navbar
+{
+    color: white;
+    background: black;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 5vw;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    font-size: 4vw;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.navbar li
+{
+    padding: 1vw;
+}
+#logo
+{
+    flex-grow: 2;
+    font-weight: bolder;
+}
+.maincontent
+{
+    z-index: -10;
+}
+.heading
+{
+    font-family: 'Kalnia';
+    font-size: 8vw;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10vw;
+}
+.subheading
+{
+    color: #ff8955;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: poppins, sans-serif;
+}
+.ackcont
+{
+    font-family: poppins, sans-serif;
+    padding: 10vw;
+    transition: 0.5s;
+    transition-property: transform;
+    content: close-quote;
+    margin-bottom: 8vw;
+}
+.ackcont:hover
+{
+    transform: translateY(-2vw);
+}
+.ackcont p
+{
+    margin-top: 3vw;
+}
+.aboutme
+{
+    padding: 8vw;
+    padding-top: 12vw;
+    border-top-left-radius: 50vw;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    font-family: poppins, sans-serif;
+    
+}
+.desktoppicture
+{
+    display: flex;
+    justify-content: center;
+}
+.aboutme #dp
+{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 40vw;
+    align-content: center;
+    padding: 4vw;
+    border: 1vw dashed aqua;
+    transition: 1s;
+    transition-property: border;
+}
+.aboutme #dp:hover
+{
+    border: 1vw dashed #ff2b5f;
+}
+.aboutmetxt
+{
+    padding: 4vw;
+    margin-top: 4vw;
+}
+.aboutmetxt h3
+{
+    text-align: center;
+    text-decoration: none;
+    /* font-family: 'Comfortaa', sans-serif; */
+}
+.aboutmetxt p
+{
+    margin-top: 5vw;
+    color: #cbcbcb;
+}
+#buttons
+{
+    display: flex;
+    padding: 7vw;
+    justify-content: center;
+    align-content: center;
+    background: black;
+    color: white;
+}
+button
+{
+    padding: 3vw;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    margin: 0vw;
+    transition: 0.4s;
+    transition-property: background, color;
+}
+button:hover
+{
+    background: white;
+    color: black;
+}
+/* for tablet */
+@media ( min-width:600px)
+{
+    .heading
+    {
+        font-size: 4vw;
+    }
+    .maincontent
+    {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .aboutme #dp
+    {
+        height: 20vw;
+        width: 20vw;
+        padding: 2vw;
+        border: 0.5vw dashed aqua;
+    }
+    .aboutme #dp:hover
+    {
+        border: 0.5vw dashed #ff2b5f;
+    }
+    .aboutme
+    {
+        padding: 20vw;
+    }
+    .ackcont p
+    {
+        margin-top: 1vw;
+    }
+}
+/* for pc */
+@media ( min-width:1000px)
+{
+    .navbar
+    {
+        padding: 2vw;
+        font-size: 1vw;
+    }
+    .maincontent
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    .heading
+    {
+        padding: 10bw;
+        color: white;
+        background: black;
+        background: url('Images/ackbackground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .subheading
+    {
+        padding: 5vw;
+        margin-left: 14vw;
+        margin-right: 14vw;
+        border-bottom: 0.5vw dashed #cc1143;
+        font-size: 3vw;
+        font-family: times new roman;
+        /* font-family: 'Kalnia', serif; */
+        color: black;
+    }
+    .ackcont
+    {
+        margin: 20vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        padding: 5vw;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        
+    }
+    .ackcont p
+    {
+        text-align: justify;
+        font-size: 2vw;
+    }
+    .aboutme
+    {
+        border-radius: 0px;
+        background: url('Images/background.jpg');
+        padding: 0px;
+        background-attachment: ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background: #5672cf; */
+        
+    }
+    .aboutme #dp
+    {
+        height: 10vw;
+        width: 10vw;
+        border: none;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        transition: 0.5s;
+        transition-property: transform;
+        transform: scale(1.5);        
+    }
+    .aboutme #dp:hover
+    {
+        border: none;
+        transform: scale(1.6);
+    }
+    .aboutme .desktoppicture
+    {
+        align-self: center;
+    }
+    .aboutmetxt
+    {
+        align-self: center;
+        margin-top: 0px;
+        
+    }
+    .aboutmetxt p
+    {
+        margin-top: 1vw;
+        color: #3a3a3a;
+    }
+    .box
+    {
+        border-radius: 20vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5vw;
+        background: white;
+        color: black;
+        
+        z-index: 1;
+    }
+    .backdrop
+    {
+        
+        backdrop-filter: blur(1vw);
+        padding: 20vw;
+    }
+}

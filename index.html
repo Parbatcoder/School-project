@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" on>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Homepage | Welcome</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="newfont.css">
+    <meta name="description" content="Worldwide tourism guide that will help you to find your next destination.">
+	  <meta name="keywords" content="tourism, worldwide tourism, tourist guide, Parbat Debnath school project">
+  	<meta name="author" content="Parbat Debnath">
+  	<link rel="icon" href="Images/aboutme.jpg">
+    <style>
+    body
+    {
+        touch-action: pan-y;
+    }
+</style>
+<script>
+    function clearField()
+    {
+        document.getElementById('newsletter').value='';
+    }
+</script>
+</head>
+<body>
+    <div class="mainparant">
+    <div class="navbar">
+        <ul>
+            <li class="logo">Parbat</li>
+            <li id="signin" onclick="location.href='signin.html'">Sign In</li>
+            <li id="manu" onclick="location.href='acknowledgement.html'">Acknowledgement</li>
+        </ul>
+    </div>
+    </div>
+    <div class="absolutecont">
+    <div class="maincontent">
+    <div id="welcome_heading">
+        <div class="text">
+        <p>EXPLORE THE WORLD</p>
+        <h6>A COLLECTION OF COUNTRY VIEW</h6>
+        </div>
+        <img src="Images/granada.jpg" alt="">
+    </div>        
+    <div id="paragraph">
+        <p>
+        Tourism means people traveling for fun and adventure . It includes activities such as sightseeing and camping. People who travel for fun are called "tourists". Places where many tourists stay are sometimes called "resorts". Places that people go to for tourism are called tourist destinations.
+    </p>
+    </div>
+    <blockquote>"Jobs fill your pocket, but adventures fill your soul."
+    </blockquote>
+    <div id="defination">
+        <p>Tourism is a major economic activity that has developed significantly over the years. It’s an activity that can be recognized in both developed and developing nations. In general terms, tourism is the movement of a person from one place to another to visit and mesmerize the beauty of that place or to have fun. Moreover, the concept of traveling is considered a luxury and only people with higher income can afford this luxury.<span id="reference">~ Wikipedia</span></p></div>
+    <div id="table_of_content">
+        <div class="table_of_content">
+            <ul>
+            <li align="center" class="list-group-item" onclick="location.href='thailand.html'">Thailand</li>
+            <li align="center" class="list-group-item" onclick="location.href='italy.html'">Italy</li>
+            <li align="center" class="list-group-item" onclick="location.href='australia.html'">Australia</li>
+            <li align="center" class="list-group-item" onclick="location.href='newzealand.html'">New Zealand</li>
+            <li align="center" class="list-group-item" onclick="location.href='singapore.html'">Singapore</li>
+            <li align="center" class="list-group-item" onclick="location.href='spain.html'">Spain</li>
+            <li align="center" class="list-group-item" onclick="location.href='france.html'">France</li>
+            <li align="center" class="list-group-item" onclick="location.href='switzerland.html'">Switzerland</li>
+            <li align="center" class="list-group-item" onclick="location.href='acknowledgement.html'">Acknowledgement</li>
+        </ul>
+    </div>
+    </div>
+    <div id="paragraph">
+    <p>We will be discussing about above mantioned countries. In that discussion culture, economy, places to visit, foods etc. will be covered briefly.</p></div>
+    <div id="buttons">
+        <button type="button" onclick="location.href='thailand.html'">Let's get Started</button>
+        </div>
+        <div id="subscriber">
+            <h3>NEWSLETTER</h3>
+            <div id="ssuscriber">
+        <input type="text" name="Emailaddress" id="newsletter" placeholder="Enter your email">
+        <button type="submit" id="subscribe" onclick="clearField()">Subscribe</button>
+        </div>
+        <div class="about_me">
+        <div class="container">
+            <div id="aboutmeparagraph"><h4>Parbat Debnath, class XII, year 2023-2024, Registration number : 421156108</h4></div>
+            <div id="aboutmeheading">Follow me on</div>
+            <div class="social_media">
+                <img src="Images/facebook.png" alt="" id="fb">  
+                <img src="Images/twitter.png" alt="" id="tw">
+                <img src="Images/instagram.png" alt="" id="in">
+            </div>
+            <footer>A HTML and CSS project by © Parbat Debnath 2023</footer>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</body>
+</html>

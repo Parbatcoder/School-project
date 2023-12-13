@@ -1,0 +1,433 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    transition: 1s;
+}
+html, body
+{
+    min-height: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.navbar
+{
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    padding: 4vw;
+    font-size: 4vw;
+    z-index: 100;
+    
+}
+.logo
+{
+    font-weight: bolder;
+    flex-grow: 3;
+}
+.navbar ul
+{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.navbar ul
+{
+    list-style: none;
+}
+.navbar li
+{
+    color: white;
+    padding: 2vw;
+}
+#signin
+{
+    border: 1px solid black;
+    border-radius: 1vw;
+    transition-property: border-color;
+    transition-duration: 1s;
+}
+#signin:hover
+{
+    border: solid 1px white;
+}
+#manu
+{
+    border: 1px solid black;
+    border-radius: 1vw;
+    transition-property: border-color;
+    transition-duration: 1s;
+    margin-left: 5px;
+}
+#manu:hover
+{
+    border: solid 1px white;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+/* body */
+.absolutecont
+{
+    z-index: -100;
+}
+#welcome_heading 
+{
+    color: white;
+    display: flex;    
+    align-items: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 8vw;
+}
+#welcome_heading .text
+{
+    position: absolute;
+    margin-top: 80vw;
+    margin-left: 5vw;
+}
+#welcome_heading h6
+{
+        font-weight: lighter;
+        font-size: 4vw;
+}
+#welcome_heading img
+{
+    height: 160vw;
+}
+#paragraph
+{
+    padding: 6vw;
+    font-size: 5vw;
+    
+}
+blockquote
+{
+    margin: 5vw;
+    padding: 3vw;
+    text-align: ;
+    font-family: times new roman;    
+    font-style: italic;
+    transition: 1s;
+    border: 0px solid white;
+}
+blockquote:hover
+{
+    padding: 16vw;
+    padding-top: 25vw;
+    padding-bottom: 25vw;
+    color: #ff7e40;
+    margin: 5vw;
+    background: #ff7e4026;
+    border-radius: 3vw;
+    text-align: center;
+}
+#defination
+{
+    padding: 6vw;
+    
+}
+.table_of_content
+{
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+.table_of_content:hover
+{
+
+}
+.table_of_content ul li
+{
+    padding: 2vw;
+    text-transform: uppercase;
+    transition-property: background-color, border, color;
+    transition: 1s;
+    list-style: none;
+}
+.table_of_content ul{
+    text-align: center;
+    width: 100%;
+}
+.table_of_content ul li:hover
+{
+    color: #ff7e40;
+}
+#buttons
+{
+    text-align: center;
+}
+#buttons button 
+{
+    outline: none;
+    margin: 5vw;
+    background: transparent;
+    color: black;
+    padding: 5vw;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4vw;
+    max-width: 300px;
+    transition: 1s;
+    ttransition-property: border, background;
+}
+#buttons button:hover
+{
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
+#button
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 4vw;
+}
+#subscriber
+{
+    background: #020a0d;
+    color: white;
+    padding: 10vw;
+    margin-top: 8vw;
+    font-size: 3vw;
+}
+#subscriber h3
+{
+    font-size: 5vw;
+}
+#subscriber img
+{
+    width: 7vw;
+    height: 7vw;
+}
+ssubscriber
+{
+    display: flex;
+    flex-direction: row;
+}
+input
+{
+    padding: 3vw;
+    width: 60%;
+    margin-top: 5vw;
+    outline: none;
+    border: 0px;
+}
+#subscribe
+{
+    padding: 2.8vw;
+    color: white;
+    background: transparent;
+    transition: 0.6s;
+    border: 1px solid white;
+    ttransition-property: background, color, border;
+}
+#subscribe:hover
+{
+    background: white;
+    color: black;
+}
+#aboutmeparagraph
+{
+    padding-top: 10vw;
+}
+#aboutmeheading
+{
+    text-align: center;
+    padding: 5vw;
+}
+.social_media
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#fb, #tw, #in
+{
+    padding: 2vw;
+}
+footer
+{
+    padding: 3vw;
+}
+/* for tablet*/
+@media ( min-width:600px)
+{
+    .navbar
+    {
+        font-size: 2vw;
+    }
+    #welcome_heading img
+    {
+        width: 100vw;
+        height: auto;
+    }
+    #welcome_heading .text
+    {
+        margin-top: 40vw;
+    }
+    #paragraph p
+    {
+        font-size: 3vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-bottom: 2vw;
+    }
+    blockquote
+    {
+        font-size: 3vw;
+        margin: 0vw;
+        padding: 0vw;
+        text-align: center;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    blockquote:hover
+    {
+        padding: 5vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        margin: 0px;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    #defination
+    {
+        font-size: 3vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .table_of_content ul li
+    {
+        padding: 1vw;
+    }
+    #buttons button
+    {
+        padding: 3vw;
+        font-size: 3vw;
+    }
+    #subscriber
+    {
+        padding: 10vw;
+        padding-left: 15vw;
+        font-size: 2vw;
+    }
+    #subscriber h3
+    {
+        font-size: 3vw;
+    }
+    footer
+    {
+        text-align: center;
+    }
+    #subscriber img
+{
+    width: 4vw;
+    height: 4vw;
+}
+    input
+    {
+        padding: 2vw;
+    }
+    #subscribe{
+        padding: 1.9vw;
+    }
+}
+/* for pc */
+@media ( min-width:1000px)
+{
+    .navbar
+    {
+        font-size: 1vw;
+        padding: 1vw;
+    }
+    #welcome_heading 
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: url('Images/granada.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #welcome_heading .text
+    {
+        margin-top: 0vw;
+        top: 25vw;
+    }
+    #welcome_heading img
+    {
+        visibility: hidden;
+        height: 50vw;
+    }
+    h6
+    {
+        color: #ffffffc9;
+    }
+        #paragraph p
+    {
+        font-size: 2vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 2vw;
+    }
+    blockquote
+    {
+        font-size: 2vw;
+        margin: 0vw;
+        padding: 0vw;
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    blockquote:hover
+    {
+        padding: 0vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin: 0px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        color: #253a0a;
+        border-radius: 0px;
+        background: #ffeabf97;
+    }
+    #defination
+    {
+        font-size: 2vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 2vw;
+    }
+    .table_of_content
+    {
+        height: 100%;
+    }
+    .table_of_content ul
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .table_of_content li
+    {
+        width: 20%;
+        margin: 1vw;
+        font-size: 1vw;
+    }
+    #buttons button
+    {
+        font-size: 2vw;
+        padding: 2vw;
+    }
+}

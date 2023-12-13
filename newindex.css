@@ -1,0 +1,480 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.mainparant
+{
+    display: block;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    min-height: 100%;
+}
+.maincontent
+{
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 0;
+}
+/* navbar */
+.navbar
+{
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    padding: 4vw;
+    font-size: 4vw;
+    
+    flex-wrap: wrap;
+    
+}
+.logo
+{
+    font-size: 4vw;
+    font-weight: bolder;
+    flex-grow: 3;
+}
+.navbar ul
+{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+ul
+{
+    list-style: none;
+}
+li
+{
+    color: white;
+    padding: 2vw;
+}
+#signin
+{
+    font-size: 4vw;
+    border: 1px solid black;
+    border-radius: 1vw;
+    transition-property: border-color;
+    transition-duration: 1s;
+}
+#signin:hover
+{
+    border: solid 1px white;
+}
+#manu
+{
+    font-size: 4vw;
+    border: 1px solid black;
+    border-radius: 1vw;
+    transition-property: border-color;
+    transition-duration: 1s;
+    margin-left: 5px;
+}
+#manu:hover
+{
+    border: solid 1px white;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+    webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* body */
+#heading_container
+{
+    
+}
+#welcome_heading
+{
+    
+    
+    color: white;
+    display: flex;
+    height: 80vw;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Kalnia'; */
+    font-family: 'Righteous', sans-serif;
+    font-size: 7vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20px 30px;
+    background: url('Images/granada.jpg');
+}
+.table_of_content
+{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.table_of_content:hover
+{
+    transform: translateY(-1%);
+}
+.table_of_content ul li
+{
+    padding: 3vw;
+    text-transform: uppercase;
+    border: 2px solid black;
+    transition-property: background-color, border, color;
+    transition: 1s;
+}
+.table_of_content ul{
+    text-align: center;
+    width: 100%;
+}
+.table_of_content ul li:hover
+{
+    background: white;
+    color: black;
+}
+#button button 
+{
+    outline: none;
+    background: black;
+    color: black;
+    padding: 5vw;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4vw;
+    max-width: 300px;
+    transition: 1s;
+    ttransition-property: border;
+}
+#button button:hover
+{
+    border: 1px solid black;
+}
+#button
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 4vw;
+}
+/* tablet */
+@media ( min-width:600px)
+{
+    #heading_container
+{
+    font-size: 4vw;
+    padding-right: 20vw;;
+    background: url('Images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s;
+    z-index: 1000;
+}
+#welcome_heading
+{
+    display: flex;
+    padding-left: 20vw;
+    border: 3vw;
+    background: #000000d6;
+    width: 90%;
+    color: white;
+}
+#paragraph
+{
+    margin-top: 0vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 3vw;
+    transition-duration: 1s;
+    box-shadow: 0px -10px 10px black;
+    color: white;
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    font-family: 'Delius', cursive;
+    transition: 1s;
+}
+blockquote
+{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2vw;
+    padding: 6vw;
+    font-family: 'Delius', cursive;
+    border-left: 3vw solid white;
+    color: white;
+    transition: 1s;
+    transition-property: color, border;
+    font-size: 2vw;
+}
+#defination p
+{
+    padding: 10vw;
+    font-size: 2vw;
+    color: white;
+    font-family: 'Delius', cursive;
+}
+#button button 
+{
+    outline: none;
+    background: black;
+    color: white;
+    padding: 3vw;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2vw;
+    max-width: 300px;
+    transition: 1s;
+    ttransition-property: border;
+}
+#fb, #tw, #in
+{
+    height: 2vw;
+    width: 2vw;
+    padding: 3vw;
+}
+#aboutmeparagraph
+{
+    font-size: 1vw;
+    color: white;
+    font-family: 'Delius', cursive;
+}
+.navbar
+{
+    font-size: 3vw;
+}
+}
+/* for pc */
+@media ( min-width:1000px)
+{
+    .mainparant
+    {
+        display: flex;
+    }
+    .navbar
+    {
+        padding: 0px;
+        position: relative;
+        width: 24vw;
+        height: 100%;
+    }
+    .navbar ul
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-left: 1vw;
+        position: fixed;
+    }
+    .navbar li
+    {
+        font-size: 3vw;
+        padding: 1vw;
+        width: 82%;
+        position: ;
+        
+    }
+    li
+    {
+        padding: 1vw;
+    }
+    .logo
+    {
+        text-align: center;
+        margin-top: 2vw;
+    }
+    #signin
+    {
+        font-size: 1vw;
+        border: none;
+        transition-property: text-shadow;
+        transition: 1s;
+    }
+    #signin:hover
+    {
+        text-shadow: 0px 0px 3px white;
+        transform: scale(1.1);
+        border: none;
+    }
+    #manu
+    {
+        font-size: 1vw;
+        margin: 0px;
+        border: none;
+        transition-property: text-shadow;
+        transition: 1s;
+    }
+    #manu:hover
+    {
+        text-shadow: 0px 0px 3px white;
+        transform: scale(1.1);
+        border: none;
+    }
+    .maincontent
+    {
+        
+        width: 80%;
+    }
+    
+    /* maincontent */
+    #welcome_heading
+    {
+        font-size: 4vw;
+        width: 120%;
+        padding: 6vw;
+    }
+   #paragraph
+   {
+       font-size: 2vw;
+       padding: 5vw;
+       margin: 0vw;
+       margin-top: 0px;
+   }
+   blockquote
+   {
+       padding: 2vw;
+       margin: 4.1vw;
+   }
+   .table_of_content ul
+   {
+       display: flex;
+       width: 80vw;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   .table_of_content ul li
+   {
+       padding: 3vw;
+   }
+   .list-group-item
+   {
+       padding: 0vw;
+       width: 50%;
+       padding: 0vw;
+   }
+   #subscriber
+   {
+       display: flex;
+       position: relative;
+       padding: 4vw;
+       margin: 0px;
+       border-top: 1px dashed white;
+   }
+   #newsletter
+   {
+       width: 150%;
+   }
+   .container
+   {
+       font-size: 2vw;
+   }
+   h4
+   {
+       font-size: 2vw;
+   }
+   .social_media img
+   {
+       height: 2vw;
+       width: 2vw;
+   }
+}
+/* about me */
+.about_me
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6vw;
+    padding: 0vw;
+    text-align: center;
+    position: relative;
+    font-size: 3vw;
+}
+.container
+{
+    position: relative;
+    padding-top: 10vw;
+    top: 0vw;
+    background-color: #000000c5;
+    padding: 5vw;
+    justify-content: center;
+    
+}
+#aboutmeheading
+{
+    color: white;
+    text-align: center;
+    padding: 3vw;
+}
+#aboutmeparagraph
+{
+    font-size: 3vw;
+    color: white;
+    font-family: 'Delius', cursive;
+}
+.social_media
+{
+    display: flex;
+    justify-content: center;
+}
+.social_media img
+{
+    height: 7vw;
+    width: 7vw;
+    padding: 3vw;
+    transform: 0.1s;
+}
+footer
+{
+    color: white;
+    font-family: 'Delius', cursive;
+    padding-bottom: 6vw;
+}
+#newsletter
+{
+    padding: 2vw;
+    outline: none;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    margin: 0vw;
+}
+#subscriber
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 13vw;
+    margin-top: 10vw;
+}
+h3
+{
+    color: white;
+    position: relative;
+    
+    text-transform: uppercase;
+    padding-bottom: 5vw;
+    
+}
+#subscribe
+{
+    outline: none;
+    border: none;
+    padding: 1vw;
+    transition: 1s;
+    transition-duration: 1s;
+    box-shadow: none;
+    transition-property: box-shadow;
+}
+#subscribe:hover
+{
+    box-shadow: 0px 0px 3px white;
+}
+#ssuscriber
+{
+    display: flex;
+    justify-content: center;
+    
+}

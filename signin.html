@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="newfont.css">
+</head>
+<style>
+    body
+    {
+        touch-action: pan-y;
+    }
+</style>
+<script>
+    function clearField()
+    {
+        document.getElementById('email').value='';
+               document.getElementById('password').value='';
+                document.getElementById('confirm').value='';
+    }
+</script>
+<body>
+    <div class="logo">
+        <h6>Parbat</h6>
+    </div>
+    <div class="box">
+        <div id="blur">
+        <div class="signin">
+            <h1 align="center">Sign In</h1>
+            <input type="email" name="Emailaddress" id="email" placeholder="Enter your email">
+            <input type="password" name="password" id="password" placeholder="Make a new password for this website">
+            <input type="password" name="conform" id="confirm" placeholder="Confirm password">
+            <button type="submit" onclick="clearField()" id="collector">Submit</button>
+            <p onclick="location.href='index.html'">Home</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

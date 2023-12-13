@@ -1,0 +1,276 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    color: black;
+}
+.navbar
+{
+    color: white;
+    background: black;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 5vw;
+    position: sticky;
+    top: 0px;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.navbar li
+{
+    padding: 1vw;
+}
+#logo
+{
+    flex-grow: 2;
+    font-weight: bolder;
+}
+img
+{
+    width: 100%;
+    transition: 1s;
+    
+}
+#heading
+{
+    font-size: 7vw;
+    font-family: times new roman;
+    font-weight: bolder;
+    padding: 5vw;
+    text-transform: uppercase;
+    border-bottom: 1vw dashed #cc1143;
+    text-align: center;
+}
+p
+{
+    padding: 5vw;
+    transition: 1s;
+    font-family: poppins, sans-serif;
+}
+p:hover
+{
+    transform: translateY(-2vw);
+}
+#subheading
+{
+    font-family: poppins, sans-serif;
+    /* color: #ff9340; */
+    font-weight: bold;
+    font-size: 6vw;
+    padding: 5vw;
+    transition: 1s;
+    transition-property: border-left;
+    transition-duration: 1s;
+    border-left: 0px solid transparent;
+    margin-top: 0px;
+}
+#subheading:hover
+{
+    border-left: 4vw solid #cc1143;
+}
+#subsubheading
+{
+    font-family: poppins, sans-serif;
+    /* color: #ff9340; */
+    font-weight: bold;
+    font-size: 5vw;
+    padding: 5vw;
+}
+#buttons
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vw;
+}
+button
+{
+    padding: 3vw;
+    outline: none;
+    border: 1px solid black;
+    background: transparent;
+    margin: 1vw;
+    transition: 0.4s;
+    transition-property: background, color;
+}
+button:hover
+{
+    background: black;
+    color: white;
+}
+.about_me
+{
+    background: black;
+    color: white;
+    padding: 14vw;
+    text-align: center;
+    margin-top: 10vw;
+    font-family: 'Delius', cursive;
+    font-size: 4vw;
+}
+#fb, #tw, #in
+{
+    height: 7vw;
+    width: 7vw;
+    margin: 2vw;
+}
+#aboutmeparagraph
+{
+    padding: 4vw;
+}
+#aboutmeheading
+{
+    padding: 4vw;
+}
+/* for tablet */
+@media ( min-width:600px)
+{
+    body
+    {
+        
+    }
+    .maincontent
+    {
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    .about_me
+    {
+        padding: 8vw;
+        font-size: 2vw;
+    }
+    .social_media #fb, #tw, #in
+    {
+        height: 3vw;
+        width: 3vw;
+    }
+    #aboutmeheading
+    {
+        padding: 2vw;
+    }
+}
+/* for pc */
+@media( min-width: 1000px){
+    body, html
+    {
+    min-height: 100%;
+    }
+    body
+    {
+        background: url("Images/spain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0px;
+    backdrop-filter: blur(1vw);
+    
+    }
+    .maincontent
+    {
+        background: white;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        padding: 10vw;
+        margin-top: 20vw;
+        z-index: -5;
+        padding-bottom: 15vw;
+    }
+    .navbar
+    {
+        padding: 2vw;
+        font-size: 1vw;
+        z-index: 20;
+    }
+    #heading
+    {
+        font-size: 4vw;
+        border-bottom: 5px dashed #cc1143;
+        padding-top: 0px;
+    }
+    #subheading
+    {
+        font-size: 3vw;
+        padding: 1vw;
+        padding-left: 5vw;
+    }
+    p
+    {
+        padding: 3vw;
+        text-align: justify;
+    }
+    .content
+    {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 3vw;
+    }
+    .content p
+    {
+        padding: 3vw;
+    }
+    .content img
+    {
+        width: 40vw;
+        padding: 3vw;
+        transition: 0.6s;
+        transition-property: box-shadow, transform;
+        box-shadow: none;
+    }
+    .content img:hover
+    {
+        transform: scale(1.07);
+    }
+    #intro
+    {
+        padding: 6vw;
+    }
+    #subsubheading
+    {
+        padding: 1vw;
+        font-size: 2vw;
+        padding-left: 6vw;
+    }
+    .contentz
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: center;
+        margin: 3vw;
+    }
+    .contentz p
+    {
+        padding: 3vw;
+    }
+    .contentz img
+    {
+        width: 40vw;
+        padding: 3vw;
+        transition: 0.6s;
+        transition-property: box-shadow, transform;
+        box-shadow: none;
+    }
+    .contentz img:hover
+    {
+        transform: scale(1.07);
+    }
+    button
+    {
+        color: white;
+        border: 1px solid white;
+        border-radius: 1vw;
+        font-size: 2vw;
+    }
+    button:hover
+    {
+        border: 1px black;
+        color: white;
+    }
+}
