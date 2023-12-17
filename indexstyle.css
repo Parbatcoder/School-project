@@ -374,19 +374,19 @@ footer
     }
         #paragraph p
     {
-        font-size: 2vw;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        font-size: 1vw;
+        padding-left: 15vw;
+        padding-right: 15vw;
         margin-bottom: 2vw;
     }
     blockquote
     {
-        font-size: 2vw;
+        font-size: 1vw;
         margin: 0vw;
         padding: 0vw;
         text-align: center;
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
     }
     blockquote:hover
     {
@@ -394,17 +394,17 @@ footer
         padding-top: 2vw;
         padding-bottom: 2vw;
         margin: 0px;
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
         color: #253a0a;
         border-radius: 0px;
         background: #ffeabf97;
     }
     #defination
     {
-        font-size: 2vw;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        font-size: 1vw;
+        padding-left: 15vw;
+        padding-right: 15vw;
         margin-bottom: 2vw;
     }
     .table_of_content
@@ -427,7 +427,7 @@ footer
     }
     #buttons button
     {
-        font-size: 2vw;
+        font-size: 1vw;
         padding: 2vw;
     }
-}
+}     
